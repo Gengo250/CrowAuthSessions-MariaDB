@@ -1,0 +1,72 @@
+# =========================
+# Secrets / env
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build outputs / binaries
+# =========================
+app
+a.out
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.out
+*.exe
+
+# CMake (se você usar)
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# =========================
+# Debug / crash dumps
+# =========================
+*.dSYM/
+*.stackdump
+core
+core.*
+vgcore.*
+
+# =========================
+# Logs / runtime
+# =========================
+*.log
+logs/
+tmp/
+.cache/
+*.pid
+
+# (se você usa curl cookies / testes)
+cookies.txt
+
+# =========================
+# IDEs / editors
+# =========================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.nvim/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Packaging / archives
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz

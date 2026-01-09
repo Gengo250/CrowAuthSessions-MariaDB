@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center">
+    <div class="w-full max-w-xl p-6 bg-slate-900 border border-slate-800 rounded-xl">
+      <h1 class="text-2xl font-bold">{{title}}</h1>
+      <p class="text-slate-300 mt-2">Dados do seu usuário</p>
+
+      <div class="mt-4 grid gap-3">
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg">
+          <p class="text-slate-400 text-sm">Usuário</p>
+          <p class="font-mono text-indigo-300 text-lg">{{username}}</p>
+        </div>
+
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg">
+          <p class="text-slate-400 text-sm">Criado em</p>
+          <p class="font-mono">{{created_at}}</p>
+        </div>
+
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-lg">
+          <p class="text-slate-400 text-sm">Último login</p>
+          <p class="font-mono">{{last_login}}</p>
+        </div>
+      </div>
+
+      <div class="mt-6 flex gap-3">
+        <a class="px-4 py-2 rounded bg-slate-800 hover:bg-slate-700" href="/dashboard">Voltar</a>
+        <a class="px-4 py-2 rounded bg-rose-600 hover:bg-rose-500" href="/logout">Logout</a>
+      </div>
+    </div>
+  </body>
+</html>
