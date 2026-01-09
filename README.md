@@ -285,16 +285,6 @@ Apesar do campo se chamar `password_hash`, este MVP salva **texto puro** (intenc
 
 ---
 
-## 🗺️ Próximos upgrades legais
-
-- Hash de senha (Argon2id/bcrypt)
-- Rate limit no login (anti brute-force)
-- CSRF token em formulários POST
-- Migrações (script versionado de SQL)
-- Logs estruturados + níveis por env
-
----
-
 ## Créditos
 
 - Udemy: **Curso de C++ Moderno Avançado — Marcos Oliveira** (orientação)
