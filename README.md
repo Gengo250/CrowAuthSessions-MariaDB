@@ -102,7 +102,7 @@ Entre no MariaDB:
 sudo mariadb
 ```
 
-Cole (exemplo usando senha `aeronave202655`):
+Cole:
 
 ```sql
 CREATE DATABASE IF NOT EXISTS crow_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
