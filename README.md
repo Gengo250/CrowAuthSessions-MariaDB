@@ -127,8 +127,8 @@ CREATE TABLE IF NOT EXISTS sessions (
   INDEX idx_sessions_expires (expires_at)
 );
 
-CREATE USER IF NOT EXISTS 'crow'@'localhost' IDENTIFIED BY 'aeronave202655';
-CREATE USER IF NOT EXISTS 'crow'@'127.0.0.1' IDENTIFIED BY 'aeronave202655';
+CREATE USER IF NOT EXISTS 'crow'@'localhost' IDENTIFIED BY 'suasenha';
+CREATE USER IF NOT EXISTS 'crow'@'127.0.0.1' IDENTIFIED BY 'suasenha';
 GRANT ALL PRIVILEGES ON crow_app.* TO 'crow'@'localhost';
 GRANT ALL PRIVILEGES ON crow_app.* TO 'crow'@'127.0.0.1';
 FLUSH PRIVILEGES;
@@ -156,7 +156,7 @@ O app lê:
 export CROW_DB_HOST=127.0.0.1
 export CROW_DB_PORT=3306
 export CROW_DB_USER=crow
-export CROW_DB_PASS='aeronave202655'
+export CROW_DB_PASS='suasenha'
 export CROW_DB_NAME=crow_app
 ```
 
